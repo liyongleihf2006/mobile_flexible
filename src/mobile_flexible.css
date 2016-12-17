@@ -1,0 +1,16 @@
+/*设置表单元素的font-size,因为这些表单元素的font-size并不会自动实现继承*/
+input, textarea, keygen, select, button{
+    font-size: 1em;
+}
+/*设置单选框多选框的宽高为当前font-size的大小,否则默认的它们大小会根据scale进行缩放*/
+[type=radio],[type=checkbox]{
+    width: 1em;
+    height: 1em;
+}
+/*option中的文字不会根据viewport中的scale进行缩放,因此需要在这里单独进行缩放*/
+[data-dpr="2"] option,[data-dpr="2"] optgroup{
+    font-size: .5em;
+}
+[data-dpr="3"] option,[data-dpr="3"] optgroup{
+    font-size: .3333333333333333em;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/mobile_flexible.css">
+    <script src="src/mobile_flexible.js"></script>
+</head>
+<style>
+    html{
+        border: 1px solid red;
+    }
+    .content{
+        border: 1px solid blue;
+        width: 3.75rem
+    }
+</style>
+<body>
+    <div class="content">
+        设计图中该元素的大小为375px
+    </div>
+    <form action="">
+        <input type="text">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="button" value="按钮">
+        <button>按钮1</button>
+        <select>
+            <option value="a">aa</option>
+            <option value="b">bb</option>
+        </select>
+        <input type="file">
+    </form>
+    <img src="default.png">
+</body>
+<script>
+    mobile_flexible();
+</script>
+</html>
