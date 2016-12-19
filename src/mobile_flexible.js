@@ -11,11 +11,11 @@ function mobile_flexible(designWidth,designFontSize){
     /*
      * 设计图中标记的宽度,默认值是750
      * */
-    designWidth|=750;
+    designWidth=designWidth||750;
     /*
      * 设计图中的正文中的字体大小,默认值为16
      * */
-    designFontSize|=16;
+    designFontSize=designFontSize||16;
     /*
      * 根据当前设备的像素比dpr来获取缩放的比例(像素比指的是当前设备实际的物理像素与逻辑像素(css像素)之间的比例)
      * */
